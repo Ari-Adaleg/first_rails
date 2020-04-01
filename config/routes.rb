@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   	patch 'pictures/:id' => "pictures#update"
 
 	get 'pictures/:id' => 'pictures#show', as: 'picture'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  	# For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  	delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
 end
